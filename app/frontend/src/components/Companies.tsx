@@ -109,8 +109,8 @@ export default function Companies() {
           </div>
           <div className="lg:col-span-6 lg:col-start-7 lg:pt-8">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              One holding group. Seven distinct companies. Each built around
-              real market needs and united by a shared value system.
+              One holding group. A cluster of distinct companies. Each built
+              around real market needs and united by a shared value system.
             </p>
           </div>
         </div>

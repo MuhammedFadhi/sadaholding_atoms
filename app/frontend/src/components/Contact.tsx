@@ -46,8 +46,8 @@ export default function Contact() {
             {[
               {
                 icon: MapPin,
-                label: "Our Location",
-                value: "Al Khobar / Dammam",
+                label: "Headquarters",
+                value: "Al-Khobar",
                 sub: "Kingdom of Saudi Arabia",
                 num: "01",
               },

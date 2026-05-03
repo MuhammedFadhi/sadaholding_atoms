@@ -34,7 +34,7 @@ export default function Hero() {
             <div className="flex items-center gap-4 mb-10">
               <div className="h-[1px] w-12 bg-primary" />
               <span className="text-xs font-mono-label text-primary">
-                سعادة · Happiness · Est. Saudi Arabia
+                Headquartered in Al-Khobar · Saudi Arabia
               </span>
             </div>
 
@@ -56,9 +56,10 @@ export default function Hero() {
             </p>
 
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-12">
-              A Saudi holding group developing high-value companies across water
-              treatment, home purification, laboratory solutions, IT, branding,
-              mega event mobilization, and lifestyle food concepts.
+              A Saudi holding group headquartered in Al-Khobar, developing a
+              cluster of high-value companies across water treatment, home
+              purification, laboratory solutions, IT, branding, mega event
+              mobilization, and lifestyle food concepts.
             </p>
 
             <div className="flex flex-wrap items-center gap-6">
@@ -106,7 +107,7 @@ export default function Hero() {
                   02 — Scope
                 </span>
                 <p className="font-serif-display italic text-lg text-foreground">
-                  Seven companies, one purpose
+                  A cluster of companies, one purpose
                 </p>
               </div>
 
@@ -114,10 +115,10 @@ export default function Hero() {
 
               <div>
                 <span className="text-[10px] font-mono-label text-muted-foreground block mb-2">
-                  03 — Location
+                  03 — Headquarters
                 </span>
                 <p className="font-serif-display italic text-lg text-foreground">
-                  Al Khobar · Dammam, KSA
+                  Al-Khobar, Saudi Arabia
                 </p>
               </div>
 

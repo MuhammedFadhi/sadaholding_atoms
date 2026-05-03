@@ -1,6 +1,6 @@
 const impactItems = [
   { number: "15+", label: "Years", desc: "Saudi water expertise" },
-  { number: "07", label: "Divisions", desc: "Essential industries" },
+  { number: "∞", label: "Cluster", desc: "Of companies & industries" },
   { number: "KSA", label: "Wide", desc: "Operations nationwide" },
   { number: "F1", label: "Mega Events", desc: "Dakar · Red Bull · more" },
   { number: "01", label: "Vision", desc: "High values, always" },

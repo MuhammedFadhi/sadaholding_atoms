@@ -89,9 +89,9 @@ export default function Footer() {
             </h4>
             <div className="space-y-3 text-sm">
               <p className="text-foreground/70">
-                Al Khobar / Dammam
+                Al-Khobar
                 <br />
-                KSA
+                Saudi Arabia
               </p>
               <p className="text-foreground/70">
                 partners@sadaholdings.com
