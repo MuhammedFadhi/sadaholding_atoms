@@ -43,10 +43,10 @@ export default function Hero() {
                 From Water
               </span>
               <span className="block text-foreground/80">
-                to <em className="italic text-primary font-light">Technology.</em>
+                to <em className="italic text-primary font-light">AI.</em>
               </span>
               <span className="block text-foreground/60 text-5xl md:text-6xl lg:text-7xl mt-4 font-sans-display font-light">
-                From Science to Experiences —
+                From Science to Global Events —
               </span>
             </h1>
 
@@ -56,10 +56,11 @@ export default function Hero() {
             </p>
 
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-12">
-              A Saudi holding group headquartered in Al-Khobar, developing a
-              cluster of high-value companies across water treatment, home
-              purification, laboratory solutions, IT, branding, mega event
-              mobilization, and lifestyle food concepts.
+              A Saudi-based holding group headquartered in Al-Khobar, building a
+              diversified portfolio of high-value companies across desalination,
+              water management, laboratory solutions, IT infrastructure, AI-driven
+              technologies, digital transformation, sports event mobilization,
+              and selected passion projects.
             </p>
 
             <div className="flex flex-wrap items-center gap-6">
@@ -129,16 +130,23 @@ export default function Hero() {
                   Ecosystem
                 </span>
                 <div className="flex flex-wrap gap-2">
-                  {["Water", "H₂O", "Scientific", "IT", "A360", "Events", "Food"].map(
-                    (tag) => (
-                      <span
-                        key={tag}
-                        className="text-xs px-3 py-1 border border-border text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors cursor-default"
-                      >
-                        {tag}
-                      </span>
-                    )
-                  )}
+                  {[
+                    "Desalination",
+                    "Water Mgmt",
+                    "Labs",
+                    "IT",
+                    "AI",
+                    "Digital",
+                    "Sports Events",
+                    "Passion",
+                  ].map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs px-3 py-1 border border-border text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors cursor-default"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>

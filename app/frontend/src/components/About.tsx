@@ -68,10 +68,11 @@ export default function About() {
             <div className="divider-line" />
 
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              Whether we are delivering pure water to homes, supporting
-              laboratories, building technology systems, launching brands,
-              mobilizing mega events, or creating new lifestyle concepts, our
-              purpose remains the same:
+              Whether we are delivering desalination and water management,
+              operating laboratory solutions, building IT infrastructure,
+              advancing AI-driven technologies and digital transformation,
+              mobilizing sports events on a global scale, or pursuing selected
+              passion projects, our purpose remains the same:
             </p>
 
             <blockquote className="relative pl-8 border-l-2 border-primary">
