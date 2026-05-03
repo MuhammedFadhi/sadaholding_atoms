@@ -1,0 +1,12 @@
+{
+  "images": {
+    "hero": "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnm6iaaflq/hero-background-water-cinematic.png",
+    "sadaWater": "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnqjyaafma/sada-water-treatment.png",
+    "sadaH2O": "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnmbyaafna/sada-h2o-home-purifier.png",
+    "sadaScientific": "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnsyaaafnq/sada-scientific-lab.png",
+    "artlandInfotech": "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwofraaafma/artland-infotech-digital.png",
+    "a360": "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwof3qaafna/a360-branding-creative.png",
+    "ardhAlfan": "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwodbyaafmq/ardh-alfan-motorsport.png",
+    "brownTruck": "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwokmyaafnq/brown-truck-food.png"
+  }
+}
