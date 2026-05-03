@@ -6,19 +6,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 border border-primary/50 flex items-center justify-center">
-                <span className="font-serif-display italic text-primary text-xl">
-                  S
-                </span>
-              </div>
-              <div>
-                <div className="font-sans-display font-semibold text-foreground">
-                  SA&apos;DA HOLDINGS
-                </div>
-                <div className="font-mono-label text-[10px] text-primary">
-                  سعادة · HAPPINESS
-                </div>
-              </div>
+              <img
+                src="/sada-logo-white.png"
+                alt="SA'DA HOLDINGS"
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="font-serif-display italic text-xl text-foreground/80 leading-snug mb-6 max-w-md">
               Building businesses that{" "}

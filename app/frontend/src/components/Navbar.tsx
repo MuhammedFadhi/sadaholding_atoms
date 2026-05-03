@@ -37,22 +37,11 @@ export default function Navbar() {
           }`}
         >
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="w-9 h-9 border border-primary/50 flex items-center justify-center group-hover:border-primary transition-colors">
-                <span className="font-serif-display italic text-primary text-lg">
-                  S
-                </span>
-              </div>
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full" />
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="text-foreground font-sans-display font-semibold tracking-tight text-sm">
-                SA&apos;DA
-              </span>
-              <span className="text-muted-foreground text-[9px] font-mono-label">
-                HOLDINGS
-              </span>
-            </div>
+            <img
+              src="/sada-logo-white.png"
+              alt="SA'DA HOLDINGS"
+              className="h-10 w-auto object-contain group-hover:opacity-80 transition-opacity"
+            />
           </a>
 
           <nav className="hidden lg:flex items-center gap-10">
