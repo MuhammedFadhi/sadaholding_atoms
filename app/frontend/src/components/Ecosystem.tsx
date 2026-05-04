@@ -30,7 +30,7 @@ export default function Ecosystem() {
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="h-[1px] w-16 bg-border" />
             <span className="text-xs font-mono-label text-primary">
-              04 / Business Ecosystem
+              Business Ecosystem
             </span>
             <div className="h-[1px] w-16 bg-border" />
           </div>
@@ -53,20 +53,7 @@ export default function Ecosystem() {
               <div className="absolute inset-[8%] rounded-full border border-primary/15 animate-rotate-reverse" />
               <div className="absolute inset-[18%] rounded-full border border-primary/20 animate-rotate-slow" />
 
-              {/* Pulse ring */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full border border-primary animate-pulse-ring" />
 
-              {/* Center - logo */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 rounded-full bg-primary flex items-center justify-center z-20 shadow-elegant">
-                <div className="text-center">
-                  <div className="font-serif-display italic text-primary-foreground text-xl">
-                    SA&apos;DA
-                  </div>
-                  <div className="font-mono-label text-primary-foreground/70 text-[9px] mt-1">
-                    HOLDINGS
-                  </div>
-                </div>
-              </div>
 
               {/* Orbiting nodes */}
               {companyNodes.map((node) => {
@@ -126,9 +113,6 @@ export default function Ecosystem() {
                 key={idx}
                 className="group flex items-start gap-6 py-6 border-b border-border hover:border-primary/40 transition-colors"
               >
-                <span className="font-serif-display italic text-3xl text-primary/60 group-hover:text-primary transition-colors leading-none pt-1">
-                  {item.number}
-                </span>
                 <p className="text-foreground text-lg leading-relaxed flex-1">
                   {item.text}
                 </p>

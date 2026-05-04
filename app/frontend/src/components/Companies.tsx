@@ -99,7 +99,7 @@ export default function Companies() {
           <div className="lg:col-span-5">
             <div className="flex items-center gap-4 mb-6">
               <span className="text-xs font-mono-label text-primary">
-                03 / Portfolio
+                Portfolio
               </span>
               <div className="h-[1px] flex-1 bg-border" />
             </div>
@@ -134,7 +134,7 @@ export default function Companies() {
               <div className="absolute inset-0 bg-gradient-to-tr from-background/60 to-transparent" />
               <div className="absolute top-6 left-6 glass-surface px-4 py-2">
                 <span className="font-mono-label text-[10px] text-primary">
-                  {featured.code} Flagship
+                  Flagship
                 </span>
               </div>
             </div>
@@ -193,9 +193,7 @@ export default function Companies() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
-                <span className="absolute top-4 left-4 glass-surface px-3 py-1 font-mono-label text-[10px] text-primary">
-                  {company.code}
-                </span>
+
               </div>
               <div className="p-8 flex flex-col flex-grow">
                 <span className="font-mono-label text-[10px] text-muted-foreground mb-3">

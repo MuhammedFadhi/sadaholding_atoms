@@ -13,7 +13,7 @@ export default function Impact() {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
             <span className="text-xs font-mono-label text-primary">
-              05 / Impact in Numbers
+              Impact in Numbers
             </span>
           </div>
           <h2 className="font-serif-display text-4xl md:text-5xl lg:text-6xl text-foreground">

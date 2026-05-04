@@ -9,7 +9,7 @@ export default function About() {
         <div className="grid lg:grid-cols-12 gap-12 mb-20">
           <div className="lg:col-span-4">
             <div className="flex items-center gap-4 mb-6">
-              <span className="text-xs font-mono-label text-primary">01 / Origin</span>
+              <span className="text-xs font-mono-label text-primary">Origin</span>
               <div className="h-[1px] flex-1 bg-border" />
             </div>
             <h2 className="font-serif-display text-5xl md:text-6xl lg:text-7xl leading-[1] text-foreground">

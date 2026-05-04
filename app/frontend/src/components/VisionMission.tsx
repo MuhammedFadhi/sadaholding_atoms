@@ -10,7 +10,7 @@ export default function VisionMission() {
         <div className="text-center mb-24">
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="h-[1px] w-16 bg-border" />
-            <span className="text-xs font-mono-label text-primary">02 / Purpose</span>
+            <span className="text-xs font-mono-label text-primary">Purpose</span>
             <div className="h-[1px] w-16 bg-border" />
           </div>
           <h2 className="font-serif-display text-5xl md:text-7xl lg:text-8xl leading-[1] text-foreground mb-6">

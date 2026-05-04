@@ -11,7 +11,7 @@ export default function Leadership() {
         <div className="flex items-center justify-center gap-4 mb-8">
           <div className="h-[1px] w-16 bg-border" />
           <span className="text-xs font-mono-label text-primary">
-            07 / Leadership
+            Leadership
           </span>
           <div className="h-[1px] w-16 bg-border" />
         </div>

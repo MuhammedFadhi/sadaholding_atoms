@@ -22,7 +22,7 @@ export default function Contact() {
           <div className="lg:col-span-7">
             <div className="flex items-center gap-4 mb-6">
               <span className="text-xs font-mono-label text-primary">
-                08 / Partnership
+                Partnership
               </span>
               <div className="h-[1px] flex-1 bg-border" />
             </div>
