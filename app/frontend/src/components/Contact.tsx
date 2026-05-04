@@ -60,9 +60,9 @@ export default function Contact() {
               },
               {
                 icon: Phone,
-                label: "Partnerships",
-                value: "48-hour response time",
-                sub: "For meaningful inquiries",
+                label: "Phone",
+                value: "920022569",
+                sub: "48-hour response for partnerships",
                 num: "03",
               },
             ].map((item) => (

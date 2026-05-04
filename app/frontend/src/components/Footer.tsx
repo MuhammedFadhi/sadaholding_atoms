@@ -87,6 +87,9 @@ export default function Footer() {
               <p className="text-foreground/70">
                 contact@sadaholdings.com
               </p>
+              <p className="text-foreground/70">
+                920022569
+              </p>
             </div>
           </div>
         </div>
