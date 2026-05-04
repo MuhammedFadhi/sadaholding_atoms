@@ -6,7 +6,7 @@ const companies = [
     website: "sadawater.com",
     category: "Water Treatment · RO · Desalination",
     description:
-      "The flagship company of SA'DA HOLDINGS. With over 15 years of Saudi water expertise, SA'DA Water delivers professional water treatment solutions: RO systems, desalination, swimming pools, chemicals, AMC services & technical know hows.",
+      "The flagship company of SA'DA HOLDING CO. With over 15 years of Saudi water expertise, SA'DA Water delivers professional water treatment solutions: RO systems, desalination, swimming pools, chemicals, AMC services & technical know hows.",
     tagline: "Saudi Water Expertise. Built Over 15+ Years.",
     cta: "Visit SA'DA Water",
     image:

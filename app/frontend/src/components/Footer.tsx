@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <img
                 src="/sada-logo-white.png"
-                alt="SA'DA HOLDINGS"
+                alt="SA'DA HOLDING CO"
                 className="h-12 w-auto object-contain"
               />
             </div>
@@ -97,7 +97,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-xs font-mono-label">
-            © {new Date().getFullYear()} SA&apos;DA HOLDINGS · All Rights Reserved
+            © {new Date().getFullYear()} SA&apos;DA HOLDING CO · All Rights Reserved
           </p>
           <p className="font-serif-display italic text-foreground/70 text-sm">
             Clear vision. Strong values. Real execution.

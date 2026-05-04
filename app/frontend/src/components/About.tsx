@@ -54,7 +54,7 @@ export default function About() {
                 Our Philosophy
               </span>
               <p className="text-xl md:text-2xl text-foreground leading-relaxed font-light">
-                SA&apos;DA HOLDINGS was created with one clear belief: businesses
+                SA&apos;DA HOLDING CO was created with one clear belief: businesses
                 should not only make profit. They should{" "}
                 <span className="text-primary font-medium">
                   create value, solve real problems, and serve people

@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src={HERO_IMAGE}
-          alt="SA'DA HOLDINGS cinematic"
+          alt="SA'DA HOLDING CO cinematic"
           className="w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background" />
@@ -155,7 +155,7 @@ export default function Hero() {
               Building Businesses That Make Life Better
             </span>
             <span className="font-mono-label text-xs text-primary">
-              © 2026 · SA&apos;DA HOLDINGS
+              © 2026 · SA&apos;DA HOLDING CO
             </span>
           </div>
         </div>

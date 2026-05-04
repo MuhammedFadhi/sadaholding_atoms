@@ -22,7 +22,7 @@ export default function Leadership() {
         </h2>
 
         <p className="text-muted-foreground text-lg md:text-xl leading-relaxed mb-20 max-w-3xl mx-auto">
-          SA&apos;DA HOLDINGS is led by people who believe in building businesses
+          SA&apos;DA HOLDING CO is led by people who believe in building businesses
           from the ground up, not just from boardrooms. From operations to
           customer service, from product development to project delivery, the
           group&apos;s strength comes from{" "}
@@ -50,7 +50,7 @@ export default function Leadership() {
               <div className="h-[1px] w-16 bg-primary" />
               <div className="flex flex-col items-center">
                 <span className="font-mono-label text-xs text-primary">
-                  SA&apos;DA HOLDINGS · Leadership
+                  SA&apos;DA HOLDING CO · Leadership
                 </span>
               </div>
               <div className="h-[1px] w-16 bg-primary" />

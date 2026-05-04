@@ -38,7 +38,7 @@ export default function Navbar() {
           <a href="#home" className="flex items-center gap-3 group">
             <img
               src="/sada-logo-white.png"
-              alt="SA'DA HOLDINGS"
+              alt="SA'DA HOLDING CO"
               className="h-10 w-auto object-contain group-hover:opacity-80 transition-opacity"
             />
           </a>

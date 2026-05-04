@@ -34,7 +34,7 @@ export default function Contact() {
           <div className="lg:col-span-5 lg:pt-8">
             <p className="text-lg text-muted-foreground leading-relaxed">
               Whether you are a customer, partner, supplier, investor,
-              institution, or brand looking to collaborate, SA&apos;DA HOLDINGS
+              institution, or brand looking to collaborate, SA&apos;DA HOLDING CO
               is open to meaningful partnerships that create real impact.
             </p>
           </div>
