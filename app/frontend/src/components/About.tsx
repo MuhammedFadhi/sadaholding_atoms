@@ -21,8 +21,8 @@ export default function About() {
           <div className="lg:col-span-7 lg:col-start-6 lg:pt-16">
             <p className="font-serif-display text-2xl md:text-3xl text-foreground/90 leading-snug italic mb-8">
               &ldquo;The name SA&apos;DA, <span className="not-italic text-primary">سعادة</span>,
-              means <span className="text-primary not-italic">happiness.</span> That
-              meaning sits at the heart of our business philosophy.&rdquo;
+              means <span className="text-primary not-italic">happiness</span>, sits
+              at the heart of our business philosophy.&rdquo;
             </p>
           </div>
         </div>
