@@ -42,8 +42,8 @@ export default function Leadership() {
               Our vision is{" "}
               <em className="italic text-primary">clear as water</em>: build
               businesses with{" "}
-              <em className="italic">high values</em> and serve the right
-              people.
+              <em className="italic">high values</em> and serve the people
+              right.
             </p>
 
             <div className="flex items-center justify-center gap-4">

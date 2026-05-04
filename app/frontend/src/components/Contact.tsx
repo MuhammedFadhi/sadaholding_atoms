@@ -62,7 +62,7 @@ export default function Contact() {
                 icon: Phone,
                 label: "Phone",
                 value: "920022569",
-                sub: "48-hour response for partnerships",
+                sub: "",
                 num: "03",
               },
             ].map((item) => (
@@ -84,7 +84,9 @@ export default function Contact() {
                     <p className="text-foreground font-medium text-lg mb-1">
                       {item.value}
                     </p>
-                    <p className="text-muted-foreground text-sm">{item.sub}</p>
+                    {item.sub && (
+                      <p className="text-muted-foreground text-sm">{item.sub}</p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -98,11 +100,13 @@ export default function Contact() {
                 Partner With Us
               </span>
               <h3 className="font-serif-display text-3xl md:text-4xl text-foreground mb-3 leading-tight">
-                Start a <em className="italic">conversation.</em>
+                Bring us your <em className="italic">ideas.</em>
               </h3>
               <p className="text-muted-foreground mb-10">
-                Tell us about your interest. We&apos;ll reach out within 48
-                hours.
+                Bring us your ideas, ventures, and investment opportunities. We
+                partner with ambitious founders, operators, and businesses ready
+                to build, scale, and create long-term value. Share your proposal
+                with us and let&apos;s explore what we can build together.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
