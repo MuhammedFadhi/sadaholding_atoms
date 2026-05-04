@@ -40,9 +40,9 @@ const companies = [
   {
     name: "Artland Infotech",
     website: "artlandinfotech.com",
-    category: "IT · Security · Software",
+    category: "IT Infrastructure · Security · Low-Current",
     description:
-      "Enterprise vision delivering innovative IT services. Infrastructure, security systems, software, websites, ecommerce, AI solutions, and digital transformation.",
+      "A future-focused technology company delivering innovative IT services across IT infrastructure, security systems, low-current solutions, and AI-enabled digital transformation.",
     tagline: "Where Business Meets Technology.",
     cta: "Visit Artland",
     image:
@@ -52,9 +52,9 @@ const companies = [
   {
     name: "A360",
     website: "a3sixty.com",
-    category: "Branding · Content · Digital",
+    category: "Branding · Digital · Software · AI",
     description:
-      "A powerhouse for branding, content, digital marketing, product launches, and brand empowerment. Strategy to visuals, campaigns to launches — designed to make brands seen, remembered, and trusted.",
+      "A powerhouse for branding, content, digital marketing, product launches, and brand empowerment — extended with software development, websites, ecommerce, AI solutions, and digital transformation. Strategy to visuals, campaigns to launches, code to cloud — designed to make brands seen, remembered, and trusted.",
     tagline: "From Scratch to Sky.",
     cta: "Explore A360",
     image:
