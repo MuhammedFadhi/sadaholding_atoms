@@ -38,7 +38,7 @@ export default function Hero() {
                 to <em className="italic text-primary font-light">AI.</em>
               </span>
               <span className="block text-foreground/60 text-5xl md:text-6xl lg:text-7xl mt-4 font-sans-display font-light">
-                From Science to Transformations —
+                From Science to Transformations
               </span>
             </h1>
 
@@ -86,7 +86,7 @@ export default function Hero() {
             <div className="space-y-8">
               <div>
                 <span className="text-[10px] font-mono-label text-muted-foreground block mb-2">
-                  01 — Heritage
+                  01 Heritage
                 </span>
                 <p className="font-serif-display italic text-lg text-foreground">
                   Built over 15+ years of Saudi expertise
@@ -97,7 +97,7 @@ export default function Hero() {
 
               <div>
                 <span className="text-[10px] font-mono-label text-muted-foreground block mb-2">
-                  02 — Scope
+                  02 Scope
                 </span>
                 <p className="font-serif-display italic text-lg text-foreground">
                   A cluster of companies, one purpose
@@ -108,7 +108,7 @@ export default function Hero() {
 
               <div>
                 <span className="text-[10px] font-mono-label text-muted-foreground block mb-2">
-                  03 — Headquarters
+                  03 Headquarters
                 </span>
                 <p className="font-serif-display italic text-lg text-foreground">
                   Al-Khobar, Saudi Arabia

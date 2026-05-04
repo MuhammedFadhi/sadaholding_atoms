@@ -6,7 +6,7 @@ const companies = [
     website: "sadawater.com",
     category: "Water Treatment · RO · Desalination",
     description:
-      "The flagship company of SA'DA HOLDINGS. With over 15 years of Saudi water expertise, SA'DA Water delivers professional water treatment solutions — RO systems, desalination, swimming pools, laboratory water, chemicals, AMC services, and after-sales support.",
+      "The flagship company of SA'DA HOLDINGS. With over 15 years of Saudi water expertise, SA'DA Water delivers professional water treatment solutions: RO systems, desalination, swimming pools, laboratory water, chemicals, AMC services, and after-sales support.",
     tagline: "Saudi Water Expertise. Built Over 15+ Years.",
     cta: "Visit SA'DA Water",
     image:
@@ -54,7 +54,7 @@ const companies = [
     website: "a3sixty.com",
     category: "Branding · Digital · Software · AI",
     description:
-      "A powerhouse for branding, content, digital marketing, product launches, and brand empowerment — extended with software development, websites, ecommerce, AI solutions, and digital transformation. Strategy to visuals, campaigns to launches, code to cloud — designed to make brands seen, remembered, and trusted.",
+      "A powerhouse for branding, content, digital marketing, product launches, and brand empowerment, extended with software development, websites, ecommerce, AI solutions, and digital transformation. Strategy to visuals, campaigns to launches, code to cloud. Designed to make brands seen, remembered, and trusted.",
     tagline: "From Scratch to Sky.",
     cta: "Explore A360",
     image:
@@ -78,8 +78,8 @@ const companies = [
     website: "Launching Soon",
     category: "Food Truck Chain · Lifestyle",
     description:
-      "Saudi Arabia's first chain concept built around the simple, most-loved daily food culture — bufiya sandwiches, tea, drinks, and comfort food served from premium trucks at exclusive Riyadh locations.",
-    tagline: "Saudi's Favorite Simple Feels — On a Truck.",
+      "Saudi Arabia's first chain concept built around the simple, most-loved daily food culture. Classic Bufiya sandwiches, tea, drinks, and comfort food served from premium trucks at exclusive Riyadh locations.",
+    tagline: "Saudi's Favorite Simple Feels On a Truck.",
     cta: "Coming Soon",
     image:
       "/assets/images/brown-truck.png",
@@ -134,7 +134,7 @@ export default function Companies() {
               <div className="absolute inset-0 bg-gradient-to-tr from-background/60 to-transparent" />
               <div className="absolute top-6 left-6 glass-surface px-4 py-2">
                 <span className="font-mono-label text-[10px] text-primary">
-                  {featured.code} — Flagship
+                  {featured.code} Flagship
                 </span>
               </div>
             </div>

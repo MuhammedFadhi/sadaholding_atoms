@@ -22,7 +22,7 @@ const pillars = [
   {
     icon: Shield,
     title: "Value Before Noise",
-    description: "Businesses that stand on quality, service, and trust — not only marketing.",
+    description: "Businesses that stand on quality, service, and trust, not only marketing.",
     number: "04",
   },
   {
@@ -56,7 +56,7 @@ export default function WhySada() {
           </div>
           <div className="lg:col-span-5 lg:col-start-8 lg:pt-12">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Five principles guide every business decision we make —
+              Five principles guide every business decision we make,
               from entity creation to daily operations, from strategy
               to customer experience.
             </p>

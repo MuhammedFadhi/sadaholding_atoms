@@ -34,7 +34,7 @@ export default function Contact() {
           <div className="lg:col-span-5 lg:pt-8">
             <p className="text-lg text-muted-foreground leading-relaxed">
               Whether you are a customer, partner, supplier, investor,
-              institution, or brand looking to collaborate — SA&apos;DA HOLDINGS
+              institution, or brand looking to collaborate, SA&apos;DA HOLDINGS
               is open to meaningful partnerships that create real impact.
             </p>
           </div>
@@ -101,7 +101,7 @@ export default function Contact() {
                 Start a <em className="italic">conversation.</em>
               </h3>
               <p className="text-muted-foreground mb-10">
-                Tell us about your interest — we&apos;ll reach out within 48
+                Tell us about your interest. We&apos;ll reach out within 48
                 hours.
               </p>
 
@@ -207,7 +207,7 @@ export default function Contact() {
         {/* Final tagline */}
         <div className="mt-32 text-center">
           <p className="font-serif-display text-3xl md:text-5xl text-foreground leading-[1.1]">
-            SA&apos;DA HOLDINGS —
+            SA&apos;DA HOLDINGS
             <br />
             <em className="italic text-primary">
               Clear vision. Strong values. Real execution.

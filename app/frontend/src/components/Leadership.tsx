@@ -23,7 +23,7 @@ export default function Leadership() {
 
         <p className="text-muted-foreground text-lg md:text-xl leading-relaxed mb-20 max-w-3xl mx-auto">
           SA&apos;DA HOLDINGS is led by people who believe in building businesses
-          from the ground up — not just from boardrooms. From operations to
+          from the ground up, not just from boardrooms. From operations to
           customer service, from product development to project delivery, the
           group&apos;s strength comes from{" "}
           <span className="text-foreground italic font-serif-display">
