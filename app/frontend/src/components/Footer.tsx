@@ -58,7 +58,6 @@ export default function Footer() {
               {[
                 { label: "About", href: "#about" },
                 { label: "Vision", href: "#vision" },
-                { label: "Universe", href: "#universe" },
                 { label: "Leadership", href: "#leadership" },
                 { label: "Contact", href: "#contact" },
               ].map((link) => (
@@ -81,9 +80,9 @@ export default function Footer() {
             </h4>
             <div className="space-y-3 text-sm">
               <p className="text-foreground/70">
-                Al-Khobar
+                Offices across the Kingdom
                 <br />
-                Saudi Arabia
+                Al-Khobar · Riyadh · Jeddah
               </p>
               <p className="text-foreground/70">
                 contact@sadaholdings.com
