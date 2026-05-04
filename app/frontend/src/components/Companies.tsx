@@ -87,7 +87,7 @@ const companies = [
   },
   {
     name: "SIT — SA'DA Industrial Trading",
-    website: "sadaholdings.com",
+    website: "",
     category: "Industrial Supplies · Chemicals · Tools",
     description:
       "A trusted supplier of high-quality industrial solutions, supporting infrastructure, industrial, commercial, and maintenance sectors with reliable tools, industrial chemicals, janitorial chemicals, cleaning tools, equipment, and support services. Built on quality, reliability, and service excellence, SIT helps businesses improve operational efficiency through dependable procurement support, technical assistance, and a wide range of products designed for manufacturing, processing, facility management, hygiene, safety, and day-to-day industrial operations.",
@@ -184,15 +184,14 @@ export default function Companies() {
 
         {/* Companies grid - staggered */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {rest.map((company, idx) => (
+          {rest.map((company, idx) => {
+            const hasWebsite =
+              company.website && company.website !== "Launching Soon";
+            return (
             <a
               key={company.name}
-              href={
-                company.website === "Launching Soon"
-                  ? "#"
-                  : `https://${company.website}`
-              }
-              target={company.website === "Launching Soon" ? undefined : "_blank"}
+              href={hasWebsite ? `https://${company.website}` : "#"}
+              target={hasWebsite ? "_blank" : undefined}
               rel="noopener noreferrer"
               className={`elegant-card overflow-hidden group flex flex-col hover-lift ${
                 idx === 0 ? "md:col-span-2 lg:col-span-1" : ""
@@ -222,13 +221,16 @@ export default function Companies() {
                 </p>
                 <div className="flex items-center justify-between pt-5 border-t border-border">
                   <span className="text-xs font-mono-label text-muted-foreground">
-                    {company.website}
+                    {company.website || "\u00A0"}
                   </span>
-                  <ArrowUpRight className="w-4 h-4 text-primary group-hover:rotate-45 transition-transform duration-500" />
+                  {hasWebsite && (
+                    <ArrowUpRight className="w-4 h-4 text-primary group-hover:rotate-45 transition-transform duration-500" />
+                  )}
                 </div>
               </div>
             </a>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
