@@ -4,9 +4,9 @@ import { Menu, X, ArrowRight } from "lucide-react";
 const navLinks = [
   { label: "سعادة", href: "#about" },
   { label: "Companies", href: "#companies" },
-  { label: "Vision", href: "#vision" },
+  { label: "Purpose", href: "#vision" },
   { label: "Leadership", href: "#leadership" },
-  { label: "Contact", href: "#contact" },
+  { label: "Reach us", href: "#contact" },
 ];
 
 export default function Navbar() {
