@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import VisionMission from "@/components/VisionMission";
 import Companies from "@/components/Companies";
-import Ecosystem from "@/components/Ecosystem";
 import Impact from "@/components/Impact";
 import WhySada from "@/components/WhySada";
 import Leadership from "@/components/Leadership";
@@ -19,7 +18,6 @@ export default function Index() {
         <About />
         <VisionMission />
         <Companies />
-        <Ecosystem />
         <Impact />
         <WhySada />
         <Leadership />
