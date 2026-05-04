@@ -26,18 +26,6 @@ const companies = [
     code: "02",
   },
   {
-    name: "SA'DA Scientific",
-    website: "sadascientific.com",
-    category: "Laboratory · Chemicals · Glassware",
-    description:
-      "High-quality laboratory instruments, chemicals, glassware, and scientific supplies supporting research, quality assurance, testing, education, and industrial innovation.",
-    tagline: "Supplying Science. Supporting Innovation.",
-    cta: "Explore Scientific",
-    image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnsyaaafnq/sada-scientific-lab.png",
-    code: "03",
-  },
-  {
     name: "Artland Infotech",
     website: "artlandinfotech.com",
     category: "IT Infrastructure · Security · Low-Current",
@@ -47,7 +35,7 @@ const companies = [
     cta: "Visit Artland",
     image:
       "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwofraaafma/artland-infotech-digital.png",
-    code: "04",
+    code: "03",
   },
   {
     name: "A360",
@@ -59,7 +47,7 @@ const companies = [
     cta: "Explore A360",
     image:
       "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwof3qaafna/a360-branding-creative.png",
-    code: "05",
+    code: "04",
   },
   {
     name: "Ardh Alfan",
@@ -71,7 +59,7 @@ const companies = [
     cta: "Visit Ardh Alfan",
     image:
       "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwodbyaafmq/ardh-alfan-motorsport.png",
-    code: "06",
+    code: "05",
   },
   {
     name: "Brown Truck",
@@ -83,6 +71,46 @@ const companies = [
     cta: "Coming Soon",
     image:
       "/assets/images/brown-truck.png",
+    code: "06",
+  },
+  {
+    name: "SA'DA Scientific",
+    website: "sadascientific.com",
+    category: "Laboratory · Chemicals · Glassware",
+    description:
+      "High-quality laboratory instruments, chemicals, glassware, and scientific supplies supporting research, quality assurance, testing, education, and industrial innovation.",
+    tagline: "Supplying Science. Supporting Innovation.",
+    cta: "Explore Scientific",
+    image:
+      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnsyaaafnq/sada-scientific-lab.png",
+    code: "07",
+  },
+  {
+    name: "SIT — SA'DA Industrial Trading",
+</to_replace>
+<new_content>
+  {
+    name: "Brown Truck",
+    website: "Launching Soon",
+    category: "Food Truck Chain · Lifestyle",
+    description:
+      "Saudi Arabia's first chain concept built around the simple, most-loved daily food culture. Classic Bufiya sandwiches, tea, drinks, and comfort food served from premium trucks at exclusive Riyadh locations.",
+    tagline: "Saudi's Favorite Simple Feels On a Truck.",
+    cta: "Coming Soon",
+    image:
+      "/assets/images/brown-truck.png",
+    code: "06",
+  },
+  {
+    name: "SA'DA Scientific",
+    website: "sadascientific.com",
+    category: "Laboratory · Chemicals · Glassware",
+    description:
+      "High-quality laboratory instruments, chemicals, glassware, and scientific supplies supporting research, quality assurance, testing, education, and industrial innovation.",
+    tagline: "Supplying Science. Supporting Innovation.",
+    cta: "Explore Scientific",
+    image:
+      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnsyaaafnq/sada-scientific-lab.png",
     code: "07",
   },
   {
