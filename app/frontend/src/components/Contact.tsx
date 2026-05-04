@@ -208,16 +208,7 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Final tagline */}
-        <div className="mt-32 text-center">
-          <p className="font-serif-display text-3xl md:text-5xl text-foreground leading-[1.1]">
-            SA&apos;DA HOLDINGS
-            <br />
-            <em className="italic text-primary">
-              Clear vision. Strong values. Real execution.
-            </em>
-          </p>
-        </div>
+
       </div>
     </section>
   );
