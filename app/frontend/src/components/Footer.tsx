@@ -86,7 +86,7 @@ export default function Footer() {
                 Saudi Arabia
               </p>
               <p className="text-foreground/70">
-                partners@sadaholdings.com
+                contact@sadaholdings.com
               </p>
             </div>
           </div>
