@@ -56,7 +56,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm">
               {[
-                { label: "About", href: "#about" },
+                { label: "سعادة", href: "#about" },
                 { label: "Vision", href: "#vision" },
                 { label: "Leadership", href: "#leadership" },
                 { label: "Contact", href: "#contact" },
