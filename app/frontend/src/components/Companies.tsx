@@ -85,6 +85,18 @@ const companies = [
       "/assets/images/brown-truck.png",
     code: "07",
   },
+  {
+    name: "SIT — SA'DA Industrial Trading",
+    website: "sadaholdings.com",
+    category: "Industrial Supplies · Chemicals · Tools",
+    description:
+      "A trusted supplier of high-quality industrial solutions, supporting infrastructure, industrial, commercial, and maintenance sectors with reliable tools, industrial chemicals, janitorial chemicals, cleaning tools, equipment, and support services. Built on quality, reliability, and service excellence, SIT helps businesses improve operational efficiency through dependable procurement support, technical assistance, and a wide range of products designed for manufacturing, processing, facility management, hygiene, safety, and day-to-day industrial operations.",
+    tagline: "Quality. Reliability. Service Excellence.",
+    cta: "Learn More",
+    image:
+      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwofraaafma/artland-infotech-digital.png",
+    code: "08",
+  },
 ];
 
 export default function Companies() {
