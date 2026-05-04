@@ -38,7 +38,7 @@ export default function Hero() {
                 to <em className="italic text-primary font-light">AI.</em>
               </span>
               <span className="block text-foreground/60 text-5xl md:text-6xl lg:text-7xl mt-4 font-sans-display font-light">
-                From Science to Global Events —
+                From Science to Transformations —
               </span>
             </h1>
 
