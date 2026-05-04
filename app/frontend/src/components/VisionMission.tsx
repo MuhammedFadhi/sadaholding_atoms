@@ -1,4 +1,4 @@
-import { Eye, Rocket } from "lucide-react";
+import { Compass } from "lucide-react";
 
 export default function VisionMission() {
   return (
@@ -22,45 +22,27 @@ export default function VisionMission() {
           </p>
         </div>
 
-        {/* Vision & Mission grid */}
-        <div className="grid md:grid-cols-2 gap-6 mb-20">
-          <div className="elegant-card p-10 md:p-14 group relative overflow-hidden hover-lift">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-700" />
+        {/* Vision & Mission — unified */}
+        <div className="mb-20">
+          <div className="elegant-card p-10 md:p-16 lg:p-20 group relative overflow-hidden hover-lift max-w-5xl mx-auto">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-700" />
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-chart-2/10 rounded-full blur-3xl group-hover:bg-chart-2/20 transition-all duration-700" />
             <div className="relative">
-              <div className="flex items-center gap-3 mb-8">
-                <Eye className="w-5 h-5 text-primary" />
+              <div className="flex items-center gap-3 mb-10">
+                <Compass className="w-5 h-5 text-primary" />
                 <span className="font-mono-label text-xs text-primary">
-                  01 — Vision
+                  Vision &amp; Mission
                 </span>
+                <div className="h-[1px] flex-1 bg-border" />
               </div>
-              <h3 className="font-serif-display text-3xl md:text-4xl text-foreground leading-snug mb-6">
-                To become a respected Saudi holding group
-              </h3>
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                Known for building{" "}
-                <span className="text-foreground italic font-serif-display">
+              <p className="font-serif-display text-2xl md:text-3xl lg:text-4xl text-foreground leading-snug">
+                Building{" "}
+                <em className="italic text-primary">
                   purposeful, scalable, and high-value businesses
-                </span>{" "}
-                across essential industries.
-              </p>
-            </div>
-          </div>
-
-          <div className="elegant-card p-10 md:p-14 group relative overflow-hidden hover-lift">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-chart-2/10 rounded-full blur-3xl group-hover:bg-chart-2/20 transition-all duration-700" />
-            <div className="relative">
-              <div className="flex items-center gap-3 mb-8">
-                <Rocket className="w-5 h-5 text-chart-2" />
-                <span className="font-mono-label text-xs text-chart-2">
-                  02 — Mission
-                </span>
-              </div>
-              <h3 className="font-serif-display text-3xl md:text-4xl text-foreground leading-snug mb-6">
-                To create, operate, and grow companies
-              </h3>
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                That solve real market needs through{" "}
-                <span className="text-foreground italic font-serif-display">
+                </em>{" "}
+                across essential industries. To create, operate, and grow
+                companies that solve real market needs through{" "}
+                <span className="italic text-primary">
                   quality, innovation, trust, and strong execution.
                 </span>
               </p>
