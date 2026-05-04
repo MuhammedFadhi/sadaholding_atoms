@@ -87,34 +87,6 @@ const companies = [
   },
   {
     name: "SIT — SA'DA Industrial Trading",
-</to_replace>
-<new_content>
-  {
-    name: "Brown Truck",
-    website: "Launching Soon",
-    category: "Food Truck Chain · Lifestyle",
-    description:
-      "Saudi Arabia's first chain concept built around the simple, most-loved daily food culture. Classic Bufiya sandwiches, tea, drinks, and comfort food served from premium trucks at exclusive Riyadh locations.",
-    tagline: "Saudi's Favorite Simple Feels On a Truck.",
-    cta: "Coming Soon",
-    image:
-      "/assets/images/brown-truck.png",
-    code: "06",
-  },
-  {
-    name: "SA'DA Scientific",
-    website: "sadascientific.com",
-    category: "Laboratory · Chemicals · Glassware",
-    description:
-      "High-quality laboratory instruments, chemicals, glassware, and scientific supplies supporting research, quality assurance, testing, education, and industrial innovation.",
-    tagline: "Supplying Science. Supporting Innovation.",
-    cta: "Explore Scientific",
-    image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnsyaaafnq/sada-scientific-lab.png",
-    code: "07",
-  },
-  {
-    name: "SIT — SA'DA Industrial Trading",
     website: "sadaholdings.com",
     category: "Industrial Supplies · Chemicals · Tools",
     description:

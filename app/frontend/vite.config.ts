@@ -38,7 +38,7 @@ export default defineConfig(({ command }) => {
         hostname: 'https://atoms.template.com',
         lastmod: getSitemapLastmod(),
         readable: true,
-        generateRobotsTxt: true,
+        generateRobotsTxt: false,
       }),
       ...(blogPrerenderRoutes.length > 0
         ? vitePrerenderPlugin({
