@@ -80,11 +80,8 @@ export default function Footer() {
             </h4>
             <div className="space-y-3 text-sm">
               <p className="text-foreground/70">
-                Active across all provinces
-                <br />
-                of Saudi Arabia
-                <br />
-                Al-Khobar · Riyadh · Jeddah
+                Active across all provinces of Saudi Arabia having offices at
+                Khobar · Riyadh · Jeddah
               </p>
               <p className="text-foreground/70">
                 contact@sadaholdings.com
