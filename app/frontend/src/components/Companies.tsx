@@ -82,7 +82,7 @@ const companies = [
     tagline: "Saudi's Favorite Simple Feels — On a Truck.",
     cta: "Coming Soon",
     image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwokmyaafnq/brown-truck-food.png",
+      "/assets/images/brown-truck.png",
     code: "07",
   },
 ];
