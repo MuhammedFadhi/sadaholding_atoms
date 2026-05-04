@@ -46,9 +46,9 @@ export default function Contact() {
             {[
               {
                 icon: MapPin,
-                label: "Offices Across the Kingdom",
-                value: "Al-Khobar · Riyadh · Jeddah",
-                sub: "Headquartered in Al-Khobar, Saudi Arabia",
+                label: "Presence Across the Kingdom",
+                value: "Active in all provinces",
+                sub: "Offices in Al-Khobar · Riyadh · Jeddah",
                 num: "01",
               },
               {

@@ -80,7 +80,9 @@ export default function Footer() {
             </h4>
             <div className="space-y-3 text-sm">
               <p className="text-foreground/70">
-                Offices across the Kingdom
+                Active across all provinces
+                <br />
+                of Saudi Arabia
                 <br />
                 Al-Khobar · Riyadh · Jeddah
               </p>
