@@ -30,14 +30,6 @@ export default function Hero() {
         <div className="grid lg:grid-cols-12 gap-12 items-end">
           {/* Left column - main content */}
           <div className="lg:col-span-8">
-            {/* Top label */}
-            <div className="flex items-center gap-4 mb-10">
-              <div className="h-[1px] w-12 bg-primary" />
-              <span className="text-xs font-mono-label text-primary">
-                Headquartered in Al-Khobar · Saudi Arabia
-              </span>
-            </div>
-
             <h1 className="font-serif-display text-6xl md:text-8xl lg:text-[10rem] leading-[0.95] mb-8 tracking-tight">
               <span className="block text-foreground">
                 From Water
