@@ -22,7 +22,7 @@ const companies = [
     tagline: "Stop Buying Water. Start Owning It.",
     cta: "Discover H2O",
     image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnmbyaafna/sada-h2o-home-purifier.png",
+      "/assets/images/sada-h2o.png",
     code: "02",
   },
   {
