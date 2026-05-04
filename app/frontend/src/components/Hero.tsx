@@ -52,7 +52,7 @@ export default function Hero() {
               diversified portfolio of high-value companies across desalination,
               water management, laboratory solutions, IT infrastructure, AI-driven
               technologies, digital transformation, sports event mobilization,
-              and selected passion projects.
+              and selective passion projects.
             </p>
 
             <div className="flex flex-wrap items-center gap-6">
