@@ -33,3 +33,6 @@
 *.dxf filter=lfs diff=lfs merge=lfs -text
 *.wmf filter=lfs diff=lfs merge=lfs -text
 *.emf filter=lfs diff=lfs merge=lfs -text
+
+# Disable Git LFS for frontend public assets so Vercel can build them
+app/frontend/public/** -filter -diff -merge
