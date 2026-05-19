@@ -17,11 +17,11 @@ function escapeHtmlAttr(str: string): string {
     .replace(/'/g, '&#39;');
 }
 
-process.env.VITE_APP_TITLE ??= process.env.OVERVIEW_TITLE ?? 'shadcnui';
-process.env.VITE_APP_DESCRIPTION ??= process.env.OVERVIEW_DESCRIPTION ?? 'Atoms Generated Project';
+process.env.VITE_APP_TITLE ??= process.env.OVERVIEW_TITLE ?? 'SA\'DA HOLDING CO | From Science to Transformations';
+process.env.VITE_APP_DESCRIPTION ??= process.env.OVERVIEW_DESCRIPTION ?? 'SA\'DA HOLDING CO is a Saudi-based holding group building a diversified portfolio of high-value companies across desalination, water management, laboratory solutions, IT infrastructure, AI-driven technologies, digital transformation, sports event mobilization, and selective passion projects.';
 process.env.VITE_APP_TITLE = escapeHtmlAttr(process.env.VITE_APP_TITLE);
 process.env.VITE_APP_DESCRIPTION = escapeHtmlAttr(process.env.VITE_APP_DESCRIPTION);
-process.env.VITE_APP_LOGO_URL ??= process.env.OVERVIEW_LOGO_URL ?? 'https://public-frontend-cos.metadl.com/mgx/img/favicon_atoms.ico';
+process.env.VITE_APP_LOGO_URL ??= process.env.OVERVIEW_LOGO_URL ?? '/assets/images/sada-favicon.png';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
