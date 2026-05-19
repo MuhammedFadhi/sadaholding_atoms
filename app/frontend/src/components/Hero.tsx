@@ -1,7 +1,6 @@
 import { ArrowUpRight, ArrowDown } from "lucide-react";
 
-const HERO_IMAGE =
-  "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnm6iaaflq/hero-background-water-cinematic.png";
+const HERO_IMAGE = "/assets/images/hero-background-water-cinematic.png";
 
 export default function Hero() {
   return (

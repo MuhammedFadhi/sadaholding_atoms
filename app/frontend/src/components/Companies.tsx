@@ -10,7 +10,7 @@ const companies = [
     tagline: "Saudi Water Expertise. Built Over 15+ Years.",
     cta: "Visit SA'DA Water",
     image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnqjyaafma/sada-water-treatment.png",
+      "/assets/images/sada-water-treatment.png",
     code: "01",
   },
   {
@@ -34,7 +34,7 @@ const companies = [
     tagline: "Where Business Meets Technology.",
     cta: "Visit Artland",
     image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwofraaafma/artland-infotech-digital.png",
+      "/assets/images/artland-infotech-digital.png",
     code: "03",
   },
   {
@@ -46,7 +46,7 @@ const companies = [
     tagline: "From Scratch to Sky.",
     cta: "Explore A360",
     image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwof3qaafna/a360-branding-creative.png",
+      "/assets/images/a360-branding-creative.png",
     code: "04",
   },
   {
@@ -58,7 +58,7 @@ const companies = [
     tagline: "Mobilizing Mega Events. Delivering on the Ground.",
     cta: "Visit Ardh Alfan",
     image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwodbyaafmq/ardh-alfan-motorsport.png",
+      "/assets/images/ardh-alfan-motorsport.png",
     code: "05",
   },
   {
@@ -82,7 +82,7 @@ const companies = [
     tagline: "Supplying Science. Supporting Innovation.",
     cta: "Explore Scientific",
     image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnsyaaafnq/sada-scientific-lab.png",
+      "/assets/images/sada-scientific-lab.png",
     code: "07",
   },
   {
@@ -94,7 +94,7 @@ const companies = [
     tagline: "Quality. Reliability. Service Excellence.",
     cta: "Learn More",
     image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwofraaafma/artland-infotech-digital.png",
+      "/assets/images/artland-infotech-digital.png",
     code: "08",
   },
 ];

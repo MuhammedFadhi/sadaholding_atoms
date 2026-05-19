@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3 mb-6">
               <img
-                src="/sada-logo-white.png"
+                src="/assets/images/sada-logo-white.png"
                 alt="SA'DA HOLDING CO"
                 className="h-12 w-auto object-contain"
               />
