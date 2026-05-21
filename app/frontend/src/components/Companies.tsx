@@ -15,7 +15,7 @@ const companies = [
   },
   {
     name: "SA'DA H2O",
-    website: "sadawater.com",
+    website: "h2o.sadawater.com",
     category: "Smart Home RO Purifiers",
     description:
       "Smart RO water purifiers designed for every Saudi home. Built for Saudi water conditions, helping families reduce bottled-water dependency through advanced multi-stage filtration.",
@@ -137,7 +137,12 @@ export default function Companies() {
             </span>
           </div>
 
-          <div className="grid lg:grid-cols-12 gap-0 elegant-card overflow-hidden">
+          <a 
+            href={`https://${featured.website}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="grid lg:grid-cols-12 gap-0 elegant-card overflow-hidden group/featured hover-lift block"
+          >
             <div className="lg:col-span-7 relative aspect-[16/10] lg:aspect-auto overflow-hidden group">
               <img
                 src={featured.image}
@@ -156,7 +161,7 @@ export default function Companies() {
               <span className="font-mono-label text-xs text-muted-foreground mb-4">
                 {featured.category}
               </span>
-              <h3 className="font-serif-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
+              <h3 className="font-serif-display text-4xl md:text-5xl text-foreground mb-6 leading-tight group-hover/featured:text-primary transition-colors">
                 {featured.name}
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -166,21 +171,16 @@ export default function Companies() {
                 &ldquo;{featured.tagline}&rdquo;
               </p>
               <div className="flex items-center justify-between pt-6 border-t border-border">
-                <a
-                  href={`https://${featured.website}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 text-foreground hover:text-primary transition-colors"
-                >
+                <div className="inline-flex items-center gap-2 text-foreground group-hover/featured:text-primary transition-colors">
                   <span className="font-medium">{featured.cta}</span>
-                  <ArrowUpRight className="w-5 h-5 group-hover:rotate-45 transition-transform duration-500" />
-                </a>
+                  <ArrowUpRight className="w-5 h-5 group-hover/featured:rotate-45 transition-transform duration-500" />
+                </div>
                 <span className="text-xs font-mono-label text-muted-foreground">
                   {featured.website}
                 </span>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         {/* Companies grid - staggered */}

@@ -50,7 +50,7 @@ export default function VisionMission() {
           </div>
         </div>
 
-        {/* Core line */}
+        {/* Core line
         <div className="relative max-w-4xl mx-auto">
           <div className="absolute -left-4 top-0 font-serif-display italic text-8xl text-primary/30 leading-none">
             &ldquo;
@@ -68,6 +68,7 @@ export default function VisionMission() {
             </p>
           </div>
         </div>
+        */}
       </div>
     </section>
   );
