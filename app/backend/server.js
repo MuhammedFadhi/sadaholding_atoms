@@ -24,7 +24,8 @@ app.post('/api/contact', async (req, res) => {
       email: process.env.SENDER_EMAIL,
       name: "SA'DA Holding"
     },
-    subject: `New Partnership Request from ${name}`,
+    replyTo: email,
+    subject: `New Partnership Request from ${name} - ${new Date().toLocaleString()}`,
     text: `
       Name: ${name}
       Email: ${email}
