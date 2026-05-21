@@ -13,7 +13,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-32 md:py-40 overflow-hidden">
+    <section id="contact" className="relative pt-12 pb-12 md:pt-16 md:pb-16 overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-primary/5 rounded-full blur-[160px] -z-10" />
 
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
@@ -54,8 +54,8 @@ export default function Contact() {
               {
                 icon: Mail,
                 label: "Email",
-                value: "contact@sadaholdings.com",
-                sub: "info@sadaholdings.com",
+                value: "contact@sadaholding.com",
+                sub: "info@sadaholding.com",
                 num: "02",
               },
               {

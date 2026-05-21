@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="relative border-t border-border py-20">
+    <footer className="relative border-t border-border pt-12 pb-20">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-12 gap-10 mb-16">
           {/* Brand */}
@@ -84,7 +84,7 @@ export default function Footer() {
                 Al Khobar, Riyadh, and Jeddah.
               </p>
               <p className="text-foreground/70">
-                contact@sadaholdings.com
+                contact@sadaholding.com
               </p>
               <p className="text-foreground/70">
                 920022569

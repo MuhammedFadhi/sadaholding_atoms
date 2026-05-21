@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden noise-overlay"
+      className="relative overflow-hidden noise-overlay"
     >
       {/* Cinematic background */}
       <div className="absolute inset-0 z-0">
@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-chart-2/5 rounded-full blur-[120px]" />
       </div>
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 w-full py-32">
+      <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 w-full pt-36 pb-2 md:pt-44 md:pb-2">
         <div className="grid lg:grid-cols-12 gap-12 items-end">
           {/* Left column - main content */}
           <div className="lg:col-span-8">
@@ -114,50 +114,12 @@ export default function Hero() {
                 </p>
               </div>
 
-              <div className="divider-line" />
 
-              <div className="pt-2">
-                <span className="text-[10px] font-mono-label text-muted-foreground block mb-3">
-                  Ecosystem
-                </span>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Desalination",
-                    "Water Mgmt",
-                    "Labs",
-                    "IT",
-                    "AI",
-                    "Digital",
-                    "Sports Events",
-                    "Passion",
-                  ].map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs px-3 py-1 border border-border text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors cursor-default"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </div>
-
-        {/* Bottom marquee */}
-        <div className="mt-20 pt-8 border-t border-border">
-          <div className="flex items-center justify-between flex-wrap gap-6">
-            <span className="font-mono-label text-xs text-muted-foreground">
-              [ Scroll to Explore ]
-            </span>
-            <span className="font-serif-display italic text-lg text-foreground/60">
-              Building Businesses That Make Life Better
-            </span>
-            <span className="font-mono-label text-xs text-primary">
-              © 2026 · SA&apos;DA HOLDING CO
-            </span>
-          </div>
-        </div>
+        {/* Section Divider Line */}
+        <div className="mt-8 md:mt-12 border-t border-border" />
       </div>
     </section>
   );

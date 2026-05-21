@@ -46,7 +46,8 @@ const companies = [
     tagline: "From Scratch to Sky.",
     cta: "Explore A360",
     image:
-      "/assets/images/a360-branding-creative.png",
+      "/assets/images/a360w.png",
+    imageClassName: "object-contain p-12",
     code: "04",
   },
   {
@@ -54,7 +55,7 @@ const companies = [
     website: "ardhalfan.com",
     category: "Event Mobilization · Machinery",
     description:
-      "Project mobilization, specialized machinery, and task force deployment for major events. Has facilitated Formula 1, Dakar Rally, Red Bull events, and other large-scale operations.",
+      "Warehouse Management, Project mobilization, specialized machinery, and task force deployment for major events. Has facilitated Formula 1, Dakar Rally, Red Bull events, and other large-scale operations.",
     tagline: "Mobilizing Mega Events. Delivering on the Ground.",
     cta: "Visit Ardh Alfan",
     image:
@@ -104,7 +105,7 @@ export default function Companies() {
   const rest = companies.slice(1);
 
   return (
-    <section id="companies" className="relative py-32 md:py-40 overflow-hidden">
+    <section id="companies" className="relative pt-8 pb-12 md:pt-12 md:pb-16 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="grid lg:grid-cols-12 gap-12 mb-20">
@@ -201,7 +202,9 @@ export default function Companies() {
                 <img
                   src={company.image}
                   alt={company.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                  className={`w-full h-full group-hover:scale-110 transition-transform duration-1000 ${
+                    company.imageClassName || "object-cover"
+                  }`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
 

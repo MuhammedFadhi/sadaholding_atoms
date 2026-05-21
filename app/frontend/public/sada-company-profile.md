@@ -154,8 +154,8 @@ At the heart of SA'DA HOLDINGS is a leadership team that believes in building bu
 Operating across all provinces of Saudi Arabia, with offices in Al Khobar, Riyadh, and Jeddah.
 
 **Email**
-contact@sadaholdings.com
-info@sadaholdings.com
+contact@sadaholding.com
+info@sadaholding.com
 
 **Phone**
 920022569
