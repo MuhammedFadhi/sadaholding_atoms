@@ -15,7 +15,7 @@ const companies = [
   },
   {
     name: "SA'DA H2O",
-    website: "sadawater.com",
+    website: "h2o.sadawater.com",
     category: "Smart Home RO Purifiers",
     description:
       "Smart RO water purifiers designed for every Saudi home. Built for Saudi water conditions, helping families reduce bottled-water dependency through advanced multi-stage filtration.",
@@ -46,7 +46,8 @@ const companies = [
     tagline: "From Scratch to Sky.",
     cta: "Explore A360",
     image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwof3qaafna/a360-branding-creative.png",
+      "/assets/images/a360w.png",
+    imageClassName: "object-contain p-12",
     code: "04",
   },
   {
@@ -54,7 +55,7 @@ const companies = [
     website: "ardhalfan.com",
     category: "Event Mobilization · Machinery",
     description:
-      "Project mobilization, specialized machinery, and task force deployment for major events. Has facilitated Formula 1, Dakar Rally, Red Bull events, and other large-scale operations.",
+      "Warehouse Management, Project mobilization, specialized machinery, and task force deployment for major events. Has facilitated Formula 1, Dakar Rally, Red Bull events, and other large-scale operations.",
     tagline: "Mobilizing Mega Events. Delivering on the Ground.",
     cta: "Visit Ardh Alfan",
     image:
@@ -63,7 +64,7 @@ const companies = [
   },
   {
     name: "Brown Truck",
-    website: "Launching Soon",
+    website: "browntrucks.com",
     category: "Food Truck Chain · Lifestyle",
     description:
       "Saudi Arabia's first chain concept built around the simple, most-loved daily food culture. Classic Bufiya sandwiches, tea, drinks, and comfort food served from premium trucks at exclusive Riyadh locations.",
@@ -90,7 +91,7 @@ const companies = [
     website: "",
     category: "Industrial Supplies · Chemicals · Tools",
     description:
-      "A trusted supplier of high-quality industrial solutions, supporting infrastructure, industrial, commercial, and maintenance sectors with reliable tools, industrial chemicals, janitorial chemicals, cleaning tools, equipment, and support services. Built on quality, reliability, and service excellence, SIT helps businesses improve operational efficiency through dependable procurement support, technical assistance, and a wide range of products designed for manufacturing, processing, facility management, hygiene, safety, and day-to-day industrial operations.",
+      "SiT is a resourceful platform of high-quality industrial solutions, serving infrastructure, industrial, commercial, and maintenance sectors with reliable tools, industrial chemicals, janitorial products, cleaning equipment, and support services. Built on quality, reliability, and service excellence, SiT helps businesses improve efficiency through dependable procurement and technical support.",
     tagline: "Quality. Reliability. Service Excellence.",
     cta: "Learn More",
     image:
@@ -136,7 +137,12 @@ export default function Companies() {
             </span>
           </div>
 
-          <div className="grid lg:grid-cols-12 gap-0 elegant-card overflow-hidden">
+          <a
+            href={`https://${featured.website}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="grid lg:grid-cols-12 gap-0 elegant-card overflow-hidden group/featured hover-lift block"
+          >
             <div className="lg:col-span-7 relative aspect-[16/10] lg:aspect-auto overflow-hidden group">
               <img
                 src={featured.image}
@@ -165,21 +171,16 @@ export default function Companies() {
                 &ldquo;{featured.tagline}&rdquo;
               </p>
               <div className="flex items-center justify-between pt-6 border-t border-border">
-                <a
-                  href={`https://${featured.website}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 text-foreground hover:text-primary transition-colors"
-                >
+                <div className="inline-flex items-center gap-2 text-foreground group-hover/featured:text-primary transition-colors">
                   <span className="font-medium">{featured.cta}</span>
-                  <ArrowUpRight className="w-5 h-5 group-hover:rotate-45 transition-transform duration-500" />
-                </a>
+                  <ArrowUpRight className="w-5 h-5 group-hover/featured:rotate-45 transition-transform duration-500" />
+                </div>
                 <span className="text-xs font-mono-label text-muted-foreground">
                   {featured.website}
                 </span>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         {/* Companies grid - staggered */}
@@ -200,7 +201,9 @@ export default function Companies() {
                   <img
                     src={company.image}
                     alt={company.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                    className={`w-full h-full group-hover:scale-110 transition-transform duration-1000 ${
+                      company.imageClassName || "object-cover"
+                    }`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
 

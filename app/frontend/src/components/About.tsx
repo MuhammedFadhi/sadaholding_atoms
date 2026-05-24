@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="relative py-32 md:py-40 overflow-hidden">
+    <section id="about" className="relative pt-16 pb-32 md:pt-24 md:pb-40 overflow-hidden">
       {/* Ambient */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[140px] -z-10" />
 

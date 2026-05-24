@@ -33,18 +33,14 @@ export default function Leadership() {
 
         {/* Quote block - magazine style */}
         <div className="relative max-w-4xl mx-auto">
-          <div className="absolute -top-8 -left-4 md:-left-8 font-serif-display italic text-[12rem] md:text-[16rem] text-primary/10 leading-none">
-            &ldquo;
-          </div>
-
           <blockquote className="relative px-4 md:px-16">
-            <p className="font-serif-display text-3xl md:text-5xl lg:text-6xl text-foreground leading-[1.15] mb-12">
+            {/* <p className="font-serif-display text-3xl md:text-5xl lg:text-6xl text-foreground leading-[1.15] mb-12">
               Our vision is{" "}
               <em className="italic text-primary">clear as water</em>: build
               businesses with{" "}
               <em className="italic">high values</em> and serve the people
               right.
-            </p>
+            </p> */}
 
             <div className="flex items-center justify-center gap-4">
               <div className="h-[1px] w-16 bg-primary" />

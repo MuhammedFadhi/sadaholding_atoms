@@ -54,8 +54,8 @@ export default function Contact() {
               {
                 icon: Mail,
                 label: "Email",
-                value: "contact@sadaholdings.com",
-                sub: "info@sadaholdings.com",
+                value: "contact@sadaholding.com",
+                sub: "info@sadaholding.com",
                 num: "02",
               },
               {

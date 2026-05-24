@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-chart-2/5 rounded-full blur-[120px]" />
       </div>
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 w-full py-32">
+      <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 w-full pt-32 pb-8">
         <div className="grid lg:grid-cols-12 gap-12 items-end">
           {/* Left column - main content */}
           <div className="lg:col-span-8">
@@ -117,7 +117,7 @@ export default function Hero() {
 
               <div className="divider-line" />
 
-              <div className="pt-2">
+              {/* <div className="pt-2">
                 <span className="text-[10px] font-mono-label text-muted-foreground block mb-3">
                   Ecosystem
                 </span>
@@ -140,25 +140,11 @@ export default function Hero() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
 
-        {/* Bottom marquee */}
-        <div className="mt-20 pt-8 border-t border-border">
-          <div className="flex items-center justify-between flex-wrap gap-6">
-            <span className="font-mono-label text-xs text-muted-foreground">
-              [ Scroll to Explore ]
-            </span>
-            <span className="font-serif-display italic text-lg text-foreground/60">
-              Building Businesses That Make Life Better
-            </span>
-            <span className="font-mono-label text-xs text-primary">
-              © 2026 · SA&apos;DA HOLDING CO
-            </span>
-          </div>
-        </div>
       </div>
     </section>
   );

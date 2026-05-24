@@ -3,10 +3,10 @@ import { Menu, X, ArrowRight } from "lucide-react";
 
 const navLinks = [
   { label: "سعادة", href: "#about" },
-  { label: "Companies", href: "#companies" },
   { label: "Purpose", href: "#vision" },
+  { label: "Portfolio", href: "#companies" },
+  { label: "Principles", href: "#principles" },
   { label: "Leadership", href: "#leadership" },
-  { label: "Reach us", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -35,7 +35,7 @@ export default function Navbar() {
         >
           <a href="#home" className="flex items-center gap-3 group">
             <img
-              src="/sada-logo-white.png"
+              src="/assets/images/sada-logo-white.png"
               alt="SA'DA HOLDING CO"
               className="h-10 w-auto object-contain group-hover:opacity-80 transition-opacity"
             />

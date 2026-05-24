@@ -35,7 +35,7 @@ const pillars = [
 
 export default function WhySada() {
   return (
-    <section className="relative py-32 md:py-40 overflow-hidden">
+    <section id="principles" className="relative py-32 md:py-40 overflow-hidden">
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[140px] -z-10" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-chart-2/5 rounded-full blur-[140px] -z-10" />
 

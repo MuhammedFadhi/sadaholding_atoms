@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3 mb-6">
               <img
-                src="/sada-logo-white.png"
+                src="/assets/images/sada-logo-white.png"
                 alt="SA'DA HOLDING CO"
                 className="h-12 w-auto object-contain"
               />
@@ -22,35 +22,8 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Companies */}
-          <div className="lg:col-span-3">
-            <h4 className="font-mono-label text-[10px] text-muted-foreground mb-5">
-              Our Companies
-            </h4>
-            <ul className="space-y-3 text-sm">
-              {[
-                "SA'DA Water",
-                "SA'DA H2O",
-                "SA'DA Scientific",
-                "Artland Infotech",
-                "A360",
-                "Ardh Alfan",
-                "Brown Truck",
-              ].map((name) => (
-                <li key={name}>
-                  <a
-                    href="#companies"
-                    className="text-foreground/70 hover:text-primary transition-colors"
-                  >
-                    {name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Navigation */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3 lg:col-start-7">
             <h4 className="font-mono-label text-[10px] text-muted-foreground mb-5">
               Explore
             </h4>
@@ -74,7 +47,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3">
             <h4 className="font-mono-label text-[10px] text-muted-foreground mb-5">
               Reach Us
             </h4>
@@ -84,7 +57,7 @@ export default function Footer() {
                 Al Khobar, Riyadh, and Jeddah.
               </p>
               <p className="text-foreground/70">
-                contact@sadaholdings.com
+                contact@sadaholding.com
               </p>
               <p className="text-foreground/70">
                 920022569
