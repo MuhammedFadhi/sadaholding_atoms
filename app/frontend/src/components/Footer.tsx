@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
-    <footer className="relative border-t border-border pt-12 pb-20">
+    <footer className="relative border-t border-border py-20">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-12 gap-10 mb-16">
           {/* Brand */}
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3 mb-6">
               <img
-                src="/assets/images/sada-logo-white.png"
+                src="/sada-logo-white.png"
                 alt="SA'DA HOLDING CO"
                 className="h-12 w-auto object-contain"
               />
@@ -84,7 +84,7 @@ export default function Footer() {
                 Al Khobar, Riyadh, and Jeddah.
               </p>
               <p className="text-foreground/70">
-                contact@sadaholding.com
+                contact@sadaholdings.com
               </p>
               <p className="text-foreground/70">
                 920022569

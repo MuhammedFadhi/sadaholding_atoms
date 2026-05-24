@@ -4,55 +4,16 @@ import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    interest: "",
-    message: ""
-  });
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setError("");
-    
-    try {
-      const response = await fetch("http://localhost:3001/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setSubmitted(true);
-        setFormData({ name: "", email: "", company: "", interest: "", message: "" });
-        setTimeout(() => setSubmitted(false), 5000);
-      } else {
-        const data = await response.json();
-        setError(data.error || "Failed to send message. Please try again.");
-      }
-    } catch (err) {
-      setError("Unable to connect to the server. Please try again later.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 4000);
   };
 
   return (
-    <section id="contact" className="relative pt-12 pb-12 md:pt-16 md:pb-16 overflow-hidden">
+    <section id="contact" className="relative py-32 md:py-40 overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-primary/5 rounded-full blur-[160px] -z-10" />
 
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
@@ -93,8 +54,8 @@ export default function Contact() {
               {
                 icon: Mail,
                 label: "Email",
-                value: "contact@sadaholding.com",
-                sub: "info@sadaholding.com",
+                value: "contact@sadaholdings.com",
+                sub: "info@sadaholdings.com",
                 num: "02",
               },
               {
@@ -156,9 +117,6 @@ export default function Contact() {
                     </label>
                     <Input
                       required
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
                       placeholder="Your name"
                       className="bg-transparent border-0 border-b border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus-visible:ring-0 rounded-none px-0 h-11"
                     />
@@ -170,9 +128,6 @@ export default function Contact() {
                     <Input
                       required
                       type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
                       placeholder="you@example.com"
                       className="bg-transparent border-0 border-b border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus-visible:ring-0 rounded-none px-0 h-11"
                     />
@@ -185,9 +140,6 @@ export default function Contact() {
                       Company
                     </label>
                     <Input
-                      name="company"
-                      value={formData.company}
-                      onChange={handleChange}
                       placeholder="Company name"
                       className="bg-transparent border-0 border-b border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus-visible:ring-0 rounded-none px-0 h-11"
                     />
@@ -198,9 +150,6 @@ export default function Contact() {
                     </label>
                     <select
                       required
-                      name="interest"
-                      value={formData.interest}
-                      onChange={handleChange}
                       className="w-full h-11 bg-transparent border-0 border-b border-border text-foreground focus:border-primary focus:outline-none px-0"
                     >
                       <option value="" className="bg-background">
@@ -231,9 +180,6 @@ export default function Contact() {
                   </label>
                   <Textarea
                     required
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     rows={4}
                     placeholder="Tell us about your partnership idea..."
                     className="bg-transparent border-0 border-b border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus-visible:ring-0 rounded-none px-0 resize-none"
@@ -243,11 +189,10 @@ export default function Contact() {
                 <div className="flex flex-wrap gap-4 pt-6">
                   <button
                     type="submit"
-                    disabled={isSubmitting}
-                    className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-medium shadow-glow-sm hover:shadow-elegant transition-all duration-500 disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-medium shadow-glow-sm hover:shadow-elegant transition-all duration-500"
                   >
-                    <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
-                    {!isSubmitting && <ArrowUpRight className="w-5 h-5 group-hover:rotate-45 transition-transform duration-500" />}
+                    <span>Send Message</span>
+                    <ArrowUpRight className="w-5 h-5 group-hover:rotate-45 transition-transform duration-500" />
                   </button>
                 </div>
 
@@ -255,14 +200,6 @@ export default function Contact() {
                   <div className="mt-4 p-4 border border-primary/30 bg-primary/5">
                     <p className="text-primary text-sm">
                       Thank you. We&apos;ll reach out within 48 hours.
-                    </p>
-                  </div>
-                )}
-                
-                {error && (
-                  <div className="mt-4 p-4 border border-red-500/30 bg-red-500/5">
-                    <p className="text-red-500 text-sm">
-                      {error}
                     </p>
                   </div>
                 )}

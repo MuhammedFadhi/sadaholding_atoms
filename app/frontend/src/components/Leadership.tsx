@@ -1,6 +1,6 @@
 export default function Leadership() {
   return (
-    <section id="leadership" className="relative pt-12 pb-12 md:pt-16 md:pb-16 overflow-hidden">
+    <section id="leadership" className="relative py-32 md:py-40 overflow-hidden">
       <div className="absolute inset-0 opacity-40 -z-10">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full border border-primary/10 animate-rotate-slow" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full border border-primary/15 animate-rotate-reverse" />

@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="relative pt-4 pb-12 md:pt-8 md:pb-12 overflow-hidden">
+    <section id="about" className="relative py-32 md:py-40 overflow-hidden">
       {/* Ambient */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[140px] -z-10" />
 
@@ -28,12 +28,12 @@ export default function About() {
         </div>
 
         {/* Main content */}
-        <div className="grid lg:grid-cols-12 gap-12 items-stretch">
-          <div className="lg:col-span-5">
-            <div className="h-[400px] lg:h-full w-full relative elegant-card overflow-hidden group">
+        <div className="grid lg:grid-cols-12 gap-12 items-start">
+          <div className="lg:col-span-5 lg:sticky lg:top-32">
+            <div className="aspect-[4/5] relative elegant-card overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-chart-2/10" />
-              <div className="absolute inset-0 flex items-center justify-center pb-12">
-                <span className="font-serif-display italic text-[10rem] md:text-[12rem] leading-none text-primary">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="font-serif-display italic text-[18rem] leading-none text-primary/20">
                   س
                 </span>
               </div>
@@ -41,7 +41,7 @@ export default function About() {
                 <span className="font-mono-label text-xs text-primary block mb-2">
                   Arabic · Happiness
                 </span>
-                <p className="font-serif-display italic text-2xl text-foreground">
+                <p className="font-serif-display italic text-3xl text-foreground">
                   The essence of everything we build.
                 </p>
               </div>

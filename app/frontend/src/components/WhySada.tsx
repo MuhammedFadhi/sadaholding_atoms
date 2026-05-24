@@ -35,7 +35,7 @@ const pillars = [
 
 export default function WhySada() {
   return (
-    <section className="relative pt-8 pb-12 md:pt-12 md:pb-16 overflow-hidden">
+    <section className="relative py-32 md:py-40 overflow-hidden">
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[140px] -z-10" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-chart-2/5 rounded-full blur-[140px] -z-10" />
 
@@ -67,9 +67,8 @@ export default function WhySada() {
           {pillars.map((pillar, idx) => (
             <div
               key={pillar.title}
-              className={`elegant-card p-10 hover-lift group relative overflow-hidden ${
-                idx === 3 ? "md:col-span-2 lg:col-span-2" : ""
-              }`}
+              className={`elegant-card p-10 hover-lift group relative overflow-hidden ${idx === 3 ? "md:col-span-2 lg:col-span-2" : ""
+                }`}
             >
               <span className="absolute top-6 right-8 font-serif-display italic text-6xl text-primary/20 leading-none group-hover:text-primary/40 transition-colors duration-500">
                 {pillar.number}

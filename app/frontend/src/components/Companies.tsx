@@ -10,12 +10,12 @@ const companies = [
     tagline: "Saudi Water Expertise. Built Over 15+ Years.",
     cta: "Visit SA'DA Water",
     image:
-      "/assets/images/sada-water-treatment.png",
+      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnqjyaafma/sada-water-treatment.png",
     code: "01",
   },
   {
     name: "SA'DA H2O",
-    website: "h2o.sadawater.com",
+    website: "sadawater.com",
     category: "Smart Home RO Purifiers",
     description:
       "Smart RO water purifiers designed for every Saudi home. Built for Saudi water conditions, helping families reduce bottled-water dependency through advanced multi-stage filtration.",
@@ -34,7 +34,7 @@ const companies = [
     tagline: "Where Business Meets Technology.",
     cta: "Visit Artland",
     image:
-      "/assets/images/artland-infotech-digital.png",
+      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwofraaafma/artland-infotech-digital.png",
     code: "03",
   },
   {
@@ -46,8 +46,7 @@ const companies = [
     tagline: "From Scratch to Sky.",
     cta: "Explore A360",
     image:
-      "/assets/images/a360w.png",
-    imageClassName: "object-contain p-12",
+      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwof3qaafna/a360-branding-creative.png",
     code: "04",
   },
   {
@@ -55,11 +54,11 @@ const companies = [
     website: "ardhalfan.com",
     category: "Event Mobilization · Machinery",
     description:
-      "Warehouse Management, Project mobilization, specialized machinery, and task force deployment for major events. Has facilitated Formula 1, Dakar Rally, Red Bull events, and other large-scale operations.",
+      "Project mobilization, specialized machinery, and task force deployment for major events. Has facilitated Formula 1, Dakar Rally, Red Bull events, and other large-scale operations.",
     tagline: "Mobilizing Mega Events. Delivering on the Ground.",
     cta: "Visit Ardh Alfan",
     image:
-      "/assets/images/ardh-alfan-motorsport.png",
+      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwodbyaafmq/ardh-alfan-motorsport.png",
     code: "05",
   },
   {
@@ -83,7 +82,7 @@ const companies = [
     tagline: "Supplying Science. Supporting Innovation.",
     cta: "Explore Scientific",
     image:
-      "/assets/images/sada-scientific-lab.png",
+      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwnsyaaafnq/sada-scientific-lab.png",
     code: "07",
   },
   {
@@ -95,7 +94,7 @@ const companies = [
     tagline: "Quality. Reliability. Service Excellence.",
     cta: "Learn More",
     image:
-      "/assets/images/artland-infotech-digital.png",
+      "https://mgx-backend-cdn.metadl.com/generate/images/1178401/2026-05-02/nxwofraaafma/artland-infotech-digital.png",
     code: "08",
   },
 ];
@@ -105,7 +104,7 @@ export default function Companies() {
   const rest = companies.slice(1);
 
   return (
-    <section id="companies" className="relative pt-8 pb-12 md:pt-12 md:pb-16 overflow-hidden">
+    <section id="companies" className="relative py-32 md:py-40 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="grid lg:grid-cols-12 gap-12 mb-20">
@@ -137,12 +136,7 @@ export default function Companies() {
             </span>
           </div>
 
-          <a 
-            href={`https://${featured.website}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="grid lg:grid-cols-12 gap-0 elegant-card overflow-hidden group/featured hover-lift block"
-          >
+          <div className="grid lg:grid-cols-12 gap-0 elegant-card overflow-hidden">
             <div className="lg:col-span-7 relative aspect-[16/10] lg:aspect-auto overflow-hidden group">
               <img
                 src={featured.image}
@@ -161,7 +155,7 @@ export default function Companies() {
               <span className="font-mono-label text-xs text-muted-foreground mb-4">
                 {featured.category}
               </span>
-              <h3 className="font-serif-display text-4xl md:text-5xl text-foreground mb-6 leading-tight group-hover/featured:text-primary transition-colors">
+              <h3 className="font-serif-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
                 {featured.name}
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -171,16 +165,21 @@ export default function Companies() {
                 &ldquo;{featured.tagline}&rdquo;
               </p>
               <div className="flex items-center justify-between pt-6 border-t border-border">
-                <div className="inline-flex items-center gap-2 text-foreground group-hover/featured:text-primary transition-colors">
+                <a
+                  href={`https://${featured.website}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+                >
                   <span className="font-medium">{featured.cta}</span>
-                  <ArrowUpRight className="w-5 h-5 group-hover/featured:rotate-45 transition-transform duration-500" />
-                </div>
+                  <ArrowUpRight className="w-5 h-5 group-hover:rotate-45 transition-transform duration-500" />
+                </a>
                 <span className="text-xs font-mono-label text-muted-foreground">
                   {featured.website}
                 </span>
               </div>
             </div>
-          </a>
+          </div>
         </div>
 
         {/* Companies grid - staggered */}
@@ -189,49 +188,46 @@ export default function Companies() {
             const hasWebsite =
               company.website && company.website !== "Launching Soon";
             return (
-            <a
-              key={company.name}
-              href={hasWebsite ? `https://${company.website}` : "#"}
-              target={hasWebsite ? "_blank" : undefined}
-              rel="noopener noreferrer"
-              className={`elegant-card overflow-hidden group flex flex-col hover-lift ${
-                idx === 0 ? "md:col-span-2 lg:col-span-1" : ""
-              }`}
-            >
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <img
-                  src={company.image}
-                  alt={company.name}
-                  className={`w-full h-full group-hover:scale-110 transition-transform duration-1000 ${
-                    company.imageClassName || "object-cover"
+              <a
+                key={company.name}
+                href={hasWebsite ? `https://${company.website}` : "#"}
+                target={hasWebsite ? "_blank" : undefined}
+                rel="noopener noreferrer"
+                className={`elegant-card overflow-hidden group flex flex-col hover-lift ${idx === 0 ? "md:col-span-2 lg:col-span-1" : ""
                   }`}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+              >
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <img
+                    src={company.image}
+                    alt={company.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
 
-              </div>
-              <div className="p-8 flex flex-col flex-grow">
-                <span className="font-mono-label text-[10px] text-muted-foreground mb-3">
-                  {company.category}
-                </span>
-                <h3 className="font-serif-display text-2xl md:text-3xl text-foreground mb-4 leading-tight group-hover:text-primary transition-colors">
-                  {company.name}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-5 flex-grow">
-                  {company.description}
-                </p>
-                <p className="font-serif-display italic text-primary text-sm mb-6">
-                  &ldquo;{company.tagline}&rdquo;
-                </p>
-                <div className="flex items-center justify-between pt-5 border-t border-border">
-                  <span className="text-xs font-mono-label text-muted-foreground">
-                    {company.website || "\u00A0"}
-                  </span>
-                  {hasWebsite && (
-                    <ArrowUpRight className="w-4 h-4 text-primary group-hover:rotate-45 transition-transform duration-500" />
-                  )}
                 </div>
-              </div>
-            </a>
+                <div className="p-8 flex flex-col flex-grow">
+                  <span className="font-mono-label text-[10px] text-muted-foreground mb-3">
+                    {company.category}
+                  </span>
+                  <h3 className="font-serif-display text-2xl md:text-3xl text-foreground mb-4 leading-tight group-hover:text-primary transition-colors">
+                    {company.name}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-5 flex-grow">
+                    {company.description}
+                  </p>
+                  <p className="font-serif-display italic text-primary text-sm mb-6">
+                    &ldquo;{company.tagline}&rdquo;
+                  </p>
+                  <div className="flex items-center justify-between pt-5 border-t border-border">
+                    <span className="text-xs font-mono-label text-muted-foreground">
+                      {company.website || "\u00A0"}
+                    </span>
+                    {hasWebsite && (
+                      <ArrowUpRight className="w-4 h-4 text-primary group-hover:rotate-45 transition-transform duration-500" />
+                    )}
+                  </div>
+                </div>
+              </a>
             );
           })}
         </div>

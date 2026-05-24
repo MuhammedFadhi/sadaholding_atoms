@@ -21,23 +21,21 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
           ? "py-3"
           : "py-6"
-      }`}
+        }`}
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div
-          className={`flex items-center justify-between transition-all duration-500 ${
-            scrolled
+          className={`flex items-center justify-between transition-all duration-500 ${scrolled
               ? "glass-surface px-6 py-3"
               : "px-0"
-          }`}
+            }`}
         >
           <a href="#home" className="flex items-center gap-3 group">
             <img
-              src="/assets/images/sada-logo-white.png"
+              src="/sada-logo-white.png"
               alt="SA'DA HOLDING CO"
               className="h-10 w-auto object-contain group-hover:opacity-80 transition-opacity"
             />
