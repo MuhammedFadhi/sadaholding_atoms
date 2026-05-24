@@ -5,11 +5,44 @@ import { useState } from "react";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
+    setIsSubmitting(true);
+    setError("");
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      company: formData.get("company"),
+      interest: formData.get("interest"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const res = await fetch("http://localhost:4000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setSubmitted(true);
+      form.reset();
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (err) {
+      setError("Something went wrong. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -117,6 +150,7 @@ export default function Contact() {
                     </label>
                     <Input
                       required
+                      name="name"
                       placeholder="Your name"
                       className="bg-transparent border-0 border-b border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus-visible:ring-0 rounded-none px-0 h-11"
                     />
@@ -127,6 +161,7 @@ export default function Contact() {
                     </label>
                     <Input
                       required
+                      name="email"
                       type="email"
                       placeholder="you@example.com"
                       className="bg-transparent border-0 border-b border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus-visible:ring-0 rounded-none px-0 h-11"
@@ -140,6 +175,7 @@ export default function Contact() {
                       Company
                     </label>
                     <Input
+                      name="company"
                       placeholder="Company name"
                       className="bg-transparent border-0 border-b border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus-visible:ring-0 rounded-none px-0 h-11"
                     />
@@ -150,6 +186,7 @@ export default function Contact() {
                     </label>
                     <select
                       required
+                      name="interest"
                       className="w-full h-11 bg-transparent border-0 border-b border-border text-foreground focus:border-primary focus:outline-none px-0"
                     >
                       <option value="" className="bg-background">
@@ -180,6 +217,7 @@ export default function Contact() {
                   </label>
                   <Textarea
                     required
+                    name="message"
                     rows={4}
                     placeholder="Tell us about your partnership idea..."
                     className="bg-transparent border-0 border-b border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus-visible:ring-0 rounded-none px-0 resize-none"
@@ -189,9 +227,10 @@ export default function Contact() {
                 <div className="flex flex-wrap gap-4 pt-6">
                   <button
                     type="submit"
-                    className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-medium shadow-glow-sm hover:shadow-elegant transition-all duration-500"
+                    disabled={isSubmitting}
+                    className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-medium shadow-glow-sm hover:shadow-elegant transition-all duration-500 disabled:opacity-70"
                   >
-                    <span>Send Message</span>
+                    <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
                     <ArrowUpRight className="w-5 h-5 group-hover:rotate-45 transition-transform duration-500" />
                   </button>
                 </div>
@@ -201,6 +240,11 @@ export default function Contact() {
                     <p className="text-primary text-sm">
                       Thank you. We&apos;ll reach out within 48 hours.
                     </p>
+                  </div>
+                )}
+                {error && (
+                  <div className="mt-4 p-4 border border-red-500/30 bg-red-500/5">
+                    <p className="text-red-500 text-sm">{error}</p>
                   </div>
                 )}
               </form>
